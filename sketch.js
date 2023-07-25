@@ -21,7 +21,7 @@ function draw() {
   frameCounter = 0;
 }
   // Calling the circle function
- 
+  circleAroundSun()
   translate(width / 2, height / 2);
 
   // Drawing the sun  
@@ -87,3 +87,18 @@ function celestialObj(color, size, translatePoint) {
 }
 
 
+function circleAroundSun(){
+
+//Color changing
+ stroke(colors[currentIndex]);        
+ noFill(); 
+
+ // Calculate the circle's position
+ var x = width / 2;
+ var y = height/2;
+ 
+ // Draw the circle
+ ellipse(x, y, 400);
+ 
+ 
+}
